@@ -1,0 +1,48 @@
+/* utilites */
+@import 'utilities/normalize';
+@import "utilities/colors";
+@import "utilities/mixins";
+@import "utilities/fonts";
+@import "utilities/global-styles";
+
+ 
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: $font-Oranienbaum;
+    color: #e7e7e7;
+    line-height: 1.5;
+}
+
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+  
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container{
+    @include min-max(320px, 1170px, 15px);
+ }
+
+
+/* modules */
+@import "modules/_header";
