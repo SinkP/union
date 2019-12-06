@@ -1,0 +1,20 @@
+.btn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  box-shadow: 0 41px 57px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-image: linear-gradient(-33deg, #1a08a2 0%, #5596df 100%);
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 1.421;
+  text-shadow: 0px 2px 1px rgba(57, 101, 152, 0.004);
+  border-bottom: 5px solid #1c4b83;
+
+  &:hover{
+     background-image:  linear-gradient(-33deg,#1a08a2, #7484df);
+  }
+}
