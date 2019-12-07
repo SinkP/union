@@ -1641,3 +1641,49 @@ ul li {
         right: 100px;
     }
 }
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__union {
+    max-width: 189px;
+}
+
+.footer__union, .footer__confidentiality {
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    color: #2E2C33;
+    line-height: 1.471;
+}
+
+.footer__union a, .footer__confidentiality a {
+    color: #2E2C33;
+}
+
+@media (max-width: 536px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .footer__union {
+        max-width: 100%;
+    }
+}

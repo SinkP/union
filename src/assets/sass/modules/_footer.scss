@@ -1,0 +1,40 @@
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__union{
+    max-width: 189px;
+}
+
+.footer__union, .footer__confidentiality{
+    font-size: 17px;
+    font-family: $font-Helvetica;
+    color: #2E2C33;
+    line-height: 1.471;
+    a{
+        color: #2E2C33;
+    }
+}
+
+
+
+@media (max-width: 536px){
+    .footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__union{
+        max-width: 100%;
+    }
+}
