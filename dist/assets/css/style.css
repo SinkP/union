@@ -445,6 +445,38 @@ ul li {
     justify-content: space-between;
 }
 
+.header__logo {
+    width: 184px;
+    height: 134px;
+    margin-right: 50px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: url("../../../assets/img/header/logotype.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.header__logo-title, .header__logo-text {
+    color: #2e2c33;
+    font-size: 21px;
+    line-height: 23.23px;
+    font-weight: 700;
+    letter-spacing: 1.11px;
+    text-transform: uppercase;
+}
+
+.header__logo-text {
+    font-weight: 400;
+}
+
 .header__address-text, .header__phone-text {
     margin-bottom: 10px;
     font-size: 17px;
@@ -465,10 +497,6 @@ ul li {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-}
-
-.header__logo {
-    margin-right: 50px;
 }
 
 .header__address {
@@ -506,7 +534,7 @@ ul li {
     -webkit-box-direction: normal;
     flex-direction: column;
     border-radius: 50%;
-    border: .37px solid #E8E8E8;
+    border: .37px solid #323a4f;
     cursor: pointer;
 }
 
@@ -515,7 +543,7 @@ ul li {
     width: 25px;
     height: 2px;
     margin-bottom: 4px;
-    background: #d3d5d9;
+    background: #979ca7;
 }
 
 .header__burger-line:last-child {
@@ -537,9 +565,11 @@ ul li {
     color: #E7E7E7;
     text-transform: uppercase;
     line-height: 1.293;
+    font-weight: 400;
 }
 
 .header__intro-btn {
+    margin-left: 30px;
     margin-top: 70px;
 }
 
@@ -596,6 +626,10 @@ ul li {
         -webkit-box-pack: justify;
         justify-content: space-between;
     }
+
+    .header__intro-btn {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -617,11 +651,6 @@ ul li {
         flex-direction: column;
         -webkit-box-align: start;
         align-items: flex-start;
-    }
-
-    .header__logo {
-        margin-right: 0;
-        margin-bottom: 20px;
     }
 
     .header__right {
@@ -663,6 +692,10 @@ ul li {
         flex-direction: column;
         -webkit-box-align: center;
         align-items: center;
+    }
+
+    .header__intro-left {
+        margin-bottom: 40px;
     }
 
     .header__intro-right {
@@ -734,9 +767,10 @@ ul li {
 
 .practice__the-key-text {
     margin-left: 25px;
+    font-weight: 400;
     font-size: 47px;
     color: #2E2C33;
-    line-height: 1.1;
+    line-height: 1;
     letter-spacing: 1.17px;
 }
 
