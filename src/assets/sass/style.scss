@@ -44,9 +44,13 @@ ul li{
  }
 
 
+//libs
+@import "modules/_slick";
+
 /* modules */
 @import "modules/_header";
 @import "modules/_practice";
 @import "modules/_video-company";
 @import "modules/_union";
 @import "modules/_contatcts";
+@import "modules/_works";
