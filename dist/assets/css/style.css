@@ -365,10 +365,10 @@ template {
 }
 
 .btn {
+    width: 330px;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    text-align: center;
     box-shadow: 0 41px 57px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     background-image: linear-gradient(-33deg, #1a08a2 0%, #5596df 100%);
@@ -382,6 +382,12 @@ template {
 
 .btn:hover {
     background-image: linear-gradient(-33deg, #1a08a2, #7484df);
+}
+
+@media (max-width: 480px) {
+    .btn {
+        width: 290px;
+    }
 }
 
 body {
@@ -448,7 +454,7 @@ ul li {
 .header__logo {
     width: 184px;
     height: 134px;
-    margin-right: 50px;
+    margin-right: 60px;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -469,7 +475,7 @@ ul li {
     font-size: 21px;
     line-height: 23.23px;
     font-weight: 700;
-    letter-spacing: 1.11px;
+    letter-spacing: 1.27px;
     text-transform: uppercase;
 }
 
@@ -478,18 +484,24 @@ ul li {
 }
 
 .header__address-text, .header__phone-text {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 17px;
     font-family: Helvetica, sans-serif;
-    line-height: 1.471;
+    letter-spacing: 1.27px;
     font-weight: 300;
     color: #CECECE;
 }
 
 .header__address-location, .header__phone-number {
+    font-weight: 400;
     font-size: 25px;
     color: #FEFEFE;
     line-height: 1.1;
+    letter-spacing: 1.25px;
+}
+
+.header__phone-number {
+    letter-spacing: 0.8px;
 }
 
 .header__left {
@@ -566,11 +578,13 @@ ul li {
     text-transform: uppercase;
     line-height: 1.293;
     font-weight: 400;
+    letter-spacing: 1.30px;
 }
 
 .header__intro-btn {
-    margin-left: 30px;
-    margin-top: 70px;
+    margin-left: 34px;
+    margin-top: 61px;
+    letter-spacing: 2.4px;
 }
 
 .header__intro-right {
@@ -595,14 +609,16 @@ ul li {
     font-size: 14px;
     color: #2E2E2E;
     text-transform: uppercase;
-    line-height: 1.3;
+    line-height: 1.6;
     text-align: center;
+    letter-spacing: 1.44px;
 }
 
 .header__intro-text span {
     font-family: Oranienbaum, serif;
     font-size: 19px;
     font-weight: 700;
+    line-height: 2;
 }
 
 @media (max-width: 980px) {
@@ -736,12 +752,12 @@ ul li {
 }
 
 .practice__title {
-    margin-bottom: 25px;
-    font-size: 51.702px;
+    margin-bottom: 10px;
+    font-size: 70px;
     color: #2E2C33;
     line-height: 1.1;
     text-align: center;
-    letter-spacing: 0.26px;
+    letter-spacing: 1.5px;
     font-weight: 400;
 }
 
@@ -847,7 +863,7 @@ ul li {
 .practice__info-subtext {
     max-width: 252px;
     margin-left: 50px;
-    margin-top: 54px;
+    margin-top: 50px;
     font-size: 19px;
     font-family: Helvetica, sans-serif;
     color: #7D7D7D;
@@ -927,4 +943,52 @@ ul li {
         -webkit-box-pack: center;
         justify-content: center;
     }
+}
+
+.video-company__inner {
+    min-height: 584px;
+    padding-top: 85px;
+    padding-left: 65px;
+    background: url("../../assets/img/vedeoCompany/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video-company__title {
+    margin-bottom: 80px;
+    font-size: 70px;
+    font-weight: 400;
+    color: #2E2C33;
+    line-height: 1.028;
+    letter-spacing: 0.26px;
+}
+
+.video-company__material {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.video-company__play {
+    margin-right: 30px;
+}
+
+.video-company-text {
+    flex-basis: 42px;
+    color: white;
+}
+
+.video-company-text span {
+    line-height: 1.5;
+}
+
+.video-company-suptext {
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.video-company-subtext {
+    font-size: 20px;
 }
