@@ -4,4 +4,5 @@
 
 $(document).ready(function() {
     //= components/works-slider.js
+    //= components/the-trust.js
 });
