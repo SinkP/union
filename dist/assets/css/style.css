@@ -1139,7 +1139,7 @@ ul li {
         padding-bottom: 30px;
     }
 
-    .uniopn__left {
+    .union__left {
         margin-bottom: 50px;
         display: -webkit-box;
         display: flex;
@@ -1195,5 +1195,96 @@ ul li {
 @media (max-width: 468px) {
     .union__title {
         font-size: 35px;
+    }
+}
+
+.contacts {
+    margin-top: 80px;
+    padding-top: 140px;
+    width: 100%;
+    height: 613px;
+    background: url("../../assets/img/contacts/map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contacts__box {
+    width: 330px;
+    height: 400px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background: url("../../assets/img/contacts/img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contacts__box-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 260px;
+}
+
+.contacts__address, .contacts__phone {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.contacts-location, .contacts__phone-number {
+    font-weight: 300;
+    font-size: 25px;
+    color: #FEFEFE;
+    line-height: 1.1;
+    letter-spacing: 1.25px;
+}
+
+.contacts-location {
+    margin-bottom: 30px;
+}
+
+.contacts-text, .contacts__phone-text {
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1.27px;
+    font-weight: 300;
+    color: #CECECE;
+}
+
+@media (max-width: 980px) {
+    .contacts {
+        margin-top: 0;
+        background-position: 58%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        margin-top: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
+        background: none;
+        background: #26374d;
+    }
+
+    .contacts__box {
+        margin: 0;
+        margin: 0 auto;
+        width: 290px;
     }
 }
