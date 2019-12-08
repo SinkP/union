@@ -1,7 +1,9 @@
 .header {
   min-height: 800px;
 
-  background: url('../../assets/img/header/header-bg.jpg');
+  //background: url('../../assets/img/header/header-bg.jpg');
+  background: url('../../assets/img/header/bg-menu.png');
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,6 +192,11 @@
 
 //header-top
 @media (max-width: 980px) {
+
+  .header{
+    min-height: auto;
+    padding-bottom: 30px;
+  }
 
   .header__top {
     flex-direction: column;

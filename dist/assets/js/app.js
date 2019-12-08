@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 /*
      _ _      _       _
@@ -3012,7 +3012,25 @@
 
 }));
 
+
 $(document).ready(function() {
+    let menuButton = document.getElementById('js-header__burger');
+    let menu = document.getElementById('js-menu');
+    let header = document.getElementById('js-header');
+    
+    header.style.background = "background: url('../../assets/img/header/bg-menu.png')";
+    
+    console.log(header);
+    
+    menuButton.addEventListener('click', navigation);
+    
+    function navigation(){
+        if(menu.style.display === 'none'){
+            menu.style.display = 'block';
+        }else{
+            menu.style.display = 'none'
+        }
+    }
     $('.works__slider').slick({
         arrows: false,
         autoplay: true,
@@ -3040,9 +3058,9 @@ $(document).ready(function() {
     $('.the-trust__slider-items').slick({
         arrows: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
-        nextArrow: '<button type="button" class="the-trust-arrow-next the-trust-arrow  slick-next"> <img src="../../assets/img/the-trust/next-arrow.png" alt="next"></button>',
-        prevArrow: '<button type="button" class="the-trust-arrow-prev the-trust-arrow  slick-prev"><img src="../../assets/img/the-trust/prev-arrow.png" alt="next"></button>',
+        slidesToScroll: 1,
+        nextArrow: '<button type="button" class="the-trust-arrow-next the-trust-arrow  slick-next"> <img src="./assets/img/the-trust/next-arrow.png" alt="next"></button>',
+        prevArrow: '<button type="button" class="the-trust-arrow-prev the-trust-arrow  slick-prev"><img src="./assets/img/the-trust/prev-arrow.png" alt="next"></button>',
         responsive: [
             {
                 breakpoint:  1106,
