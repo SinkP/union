@@ -1,7 +1,16 @@
 .header {
   min-height: 800px;
+}
 
-  //background: url('../../assets/img/header/header-bg.jpg');
+.header-bg{
+  background: url('../../assets/img/header/header-bg.jpg');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-bg-menu{
   background: url('../../assets/img/header/bg-menu.png');
 
   background-position: center;
@@ -28,7 +37,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 
   background: url('../../assets/img/header/logotype.png');
   background-repeat: no-repeat;
@@ -188,6 +196,13 @@
   }
 }
 
+.header__intro--display-flex{
+  display: flex;
+}
+
+.header__intro--display {
+  display: none
+}
 
 
 //header-top

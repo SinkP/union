@@ -532,6 +532,16 @@ ul li {
 /* modules */
 .header {
     min-height: 800px;
+}
+
+.header-bg {
+    background: url("../../assets/img/header/header-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-bg-menu {
     background: url("../../assets/img/header/bg-menu.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -719,6 +729,15 @@ ul li {
     font-size: 19px;
     font-weight: 700;
     line-height: 2;
+}
+
+.header__intro--display-flex {
+    display: -webkit-box;
+    display: flex;
+}
+
+.header__intro--display {
+    display: none;
 }
 
 @media (max-width: 980px) {
@@ -1760,10 +1779,6 @@ ul li {
     background-image: linear-gradient(-28deg, #d7d7d7 0%, #ffffff 100%);
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
-}
-
-.menu--display-none {
-    display: none;
 }
 
 @media (max-width: 1088px) {
