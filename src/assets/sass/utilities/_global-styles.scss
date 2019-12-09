@@ -20,6 +20,10 @@
   }
 }
 
+.hidden {
+  display: none !important
+}
+
 @media (max-width: 480px){
   .btn{
     width: 290px;

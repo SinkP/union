@@ -1,7 +1,27 @@
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.menu--opened {
+  background-image: url('../../assets/img/header/bg-menu.png');
+  display: block;
+  height: 800px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .menu__list{
   display: flex;
   justify-content: space-between;
+  
+  margin-top: 140px;
 }
 
 
