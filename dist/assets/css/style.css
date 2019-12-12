@@ -381,7 +381,9 @@ template {
 }
 
 .btn:hover {
-    background-image: linear-gradient(-33deg, #1a08a2, #7484df);
+    text-shadow: none;
+    background-image: none;
+    background-color: #1c4b83;
 }
 
 .hidden {
@@ -1726,22 +1728,28 @@ ul li {
 }
 
 .menu {
-    display: none;
     position: absolute;
     z-index: 2;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-}
-
-.menu--opened {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
     background-image: url("../../assets/img/header/bg-menu.png");
-    display: block;
     height: 800px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.menu--opened {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
 }
 
 .menu__list {
@@ -1753,6 +1761,7 @@ ul li {
 }
 
 .menu__list-item {
+    width: 100%;
     position: relative;
     margin-top: 216px;
     display: -webkit-box;
@@ -1776,6 +1785,12 @@ ul li {
     position: absolute;
     top: -60px;
     font-weight: 400;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: all 2s cubic-bezier(0.74, -0.65, 0.45, 2.02);
+    transition: all 2s cubic-bezier(0.74, -0.65, 0.45, 2.02);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
     color: #434247;
     font-size: 169px;
     font-weight: bold;
@@ -1786,19 +1801,35 @@ ul li {
 
 .menu__list-item-link {
     margin-bottom: 80px;
-    opacity: 0;
     color: #ffffff;
     font-size: 48px;
     font-weight: 700;
-    line-height: 23.23px;
     text-transform: uppercase;
     letter-spacing: 2.58px;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
+    text-align: center;
+    width: 0;
+    -webkit-transition: all 3s cubic-bezier(0.74, -0.65, 0.45, 2.02);
+    transition: all 3s cubic-bezier(0.74, -0.65, 0.45, 2.02);
+    -webkit-transform: translateX(-1%);
+    transform: translateX(-1%);
+    overflow: hidden;
+}
+
+.text-show--big {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.text-show--img {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 
 .text-show {
-    opacity: 1;
+    width: 100%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transform: translateX(0);
 }
 
 .menu__list-img {

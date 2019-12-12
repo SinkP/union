@@ -16,12 +16,14 @@
   border-bottom: 5px solid #1c4b83;
 
   &:hover{
-    background-image:  linear-gradient(-33deg,#1a08a2, #7484df);
+    text-shadow: none;
+    background-image: none;
+    background-color: #1c4b83;
   }
 }
 
 .hidden {
-  display: none !important
+  display: none !important;
 }
 
 @media (max-width: 480px){
