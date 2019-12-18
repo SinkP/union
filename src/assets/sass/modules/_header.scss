@@ -166,10 +166,14 @@
 .header__intro-btn {
   margin-left: 34px;
   margin-top: 61px;
+  margin-bottom: 5px;
 
   letter-spacing: 2.4px;
 }
 
+.header__intro-btn:hover {
+  margin-top: 66px;
+}
 
 .header__intro-right {
   display: flex;

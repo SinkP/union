@@ -3024,7 +3024,7 @@ $(document).ready(function() {
         },
         {
             open: document.querySelector('.header__burger'),
-            target: document.querySelector('.menu__list-item-link'),
+            target: document.querySelector('.menu__list-item-text'),
             close: document.querySelector('.header__close'),
             state: false,
             class: 'text-show',
@@ -3053,7 +3053,7 @@ $(document).ready(function() {
     ]
     
     
-    for (const item of document.getElementsByClassName('menu__list-item-link')) {
+    for (const item of document.getElementsByClassName('menu__list-item-text')) {
         options.push(
             {
                 open: document.querySelector('.header__burger'),

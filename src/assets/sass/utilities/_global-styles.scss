@@ -16,9 +16,12 @@
   border-bottom: 5px solid #1c4b83;
 
   &:hover{
-    text-shadow: none;
-    background-image: none;
-    background-color: #1c4b83;
+    border-bottom: 0;
+    // padding-bottom: 35px;
+    // border-bottom: 5px solid inherit;
+    // text-shadow: none;
+    // background-image: none;
+    // background-color: #1c4b83;
   }
 }
 
